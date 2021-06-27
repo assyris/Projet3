@@ -3,8 +3,9 @@
 
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./public/css/style.css">
         <script src="https://kit.fontawesome.com/0f91d2e83a.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ohmyfood</title>
     </head>
 
@@ -14,107 +15,108 @@
           </header>
         
           <main>
-            <section>
-              <i class="fas fa-map-marker-alt"></i>
+            <section class="location">
+              <i class="fas fa-map-marker-alt icone-location"></i>
               <span>Paris, Belleville</span>
-        
-              <h2>Réservez le menu qui<br>vous convient</h2>
-              <p>
+            </section> 
+
+            <section class="reserve">
+              <h2 class="reserve-title">Réservez le menu qui<br>vous convient</h2>
+              <p class="reserve-subtitle">
                 Découvrez des restaurants d'exception, séléctionnés par nos soins
               </p>
-              <a>
+              <a class="reserve-btn">
                 Explorer nos restaurants
               </a>
             </section>
         
             <section>
-              <div>
-                <h2>Fonctionnement</h2>
-                <ol>
-                  <li>
-                    <i class="fas fa-mobile-alt"></i>
-                    <span>Choisissez un restaurant</span>
+              <div class="operation">
+                <h2 class="operation-title">Fonctionnement</h2>
+                <ol class="operation-liste">
+                  <li class="operation-btn">
+                    <i class="fas fa-mobile-alt operation-icone"></i>
+                    <span class="operation-title-btn">Choisissez un restaurant</span>
                   </li>
-                  <li>
-                    <i class="fas fa-list-ul"></i>
-                    <span>Composez votre menu</span>
+                  <li class="operation-btn">
+                    <i class="fas fa-list-ul operation-icone"></i>
+                    <span class="operation-title-btn">Composez votre menu</span>
                   </li>
-                  <li>
-                    <i class="fas fa-store"></i>
-                    <span>Dégustez au restaurant</span>
+                  <li class="operation-btn">
+                    <i class="fas fa-store operation-icone"></i>
+                    <span class="operation-title-btn">Dégustez au restaurant</span>
                   </li>
                 </ol>
               </div>
             </section>
         
-            <section>
-              <div>
-                <h2>Restaurants</h2>
-                
-                <div>
-                  <a href="./la-palette-du-gout.html">
-                    <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-                    <span>Nouveau</span>
-                      <div>
-                        <h3>La palette du goût</h3>
-                        <span>Ménilmontant</span>
-                      </div>
-                      <div>
-                        <i class="far fa-heart fa-2x"></i>
-                        <i class="fas fa-heart fa-2x"></i>
-                      </div>
-                  </a>
-            
-                  <a href="./la-note-enchantee.html">
-                    <img src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-                    <span>Nouveau</span>
-                      <div>
-                        <h3>La note enchantée</h3>
-                        <span>Charonne</span>
-                      </div>
-                      <div>
-                        <i class="far fa-heart fa-2x"></i>
-                        <i class="fas fa-heart fa-2x"></i>
-                      </div>
-                  </a>
-            
-                  <a href="./a-la-francaise.html">
-                    <img src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
-                      <div>
-                        <h3>À la française</h3>
-                        <span>Cité Rouge</span>
-                      </div>
-                      <div>
-                        <i class="far fa-heart fa-2x"></i>
-                        <i class="fas fa-heart fa-2x"></i>
-                      </div>
-                  </a>
-            
-                  <a href="./le-delice-des-sens.html">
-                    <img src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
-                      <div>
-                        <h3>Le délice des sens</h3>
-                        <span>Folie-Méricourt</span>
-                      </div>
-                      <div>
-                        <i class="far fa-heart fa-2x"></i>
-                        <i class="fas fa-heart fa-2x"></i>
-                      </div>
-                  </a>
-                </div>
-              </div>
+            <section class="resto">
+              
+              <h2 class="resto-title">Restaurants</h2>
+
+                  <div class="resto-card">
+                    <a href="./la-palette-du-gout.html"><img src="public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                    <div class="resto-subtitle">
+                      <h3>La palette du goût</h3>
+                      <p>Ménilmontant</p>
+                    </div>
+                    <div>
+                      <!--<i class="far fa-heart fa-2x"></i>-->
+                      <i class="fas fa-heart fa-2x resto-icone"></i></a>
+                    </div>
+                    <p class="new">Nouveau</p>
+                  </div>
+
+                  <div class="resto-card">           
+                    <a href="./la-note-enchantee.html"><img src="public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                    <div class="resto-subtitle">
+                      <h3>La note enchantée</h3>
+                      <p>Charonne</p>
+                    </div>
+                    <div>
+                      <!--<i class="far fa-heart fa-2x"></i>-->
+                      <i class="fas fa-heart fa-2x resto-icone"></i></a>
+                    </div>
+                    <p class="new">Nouveau</p>
+                  </div>
+
+                  <div class="resto-card">
+                    <a href="./a-la-francaise.html"><img src="public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                    <div class="resto-subtitle">
+                      <h3>À la française</h3>
+                      <p>Cité Rouge</p>
+                    </div>
+                    <div>
+                      <!--<i class="far fa-heart fa-2x"></i>-->
+                      <i class="fas fa-heart fa-2x resto-icone"></i></a>
+                    </div>
+                   </div>
+
+                  <div class="resto-card">
+                    <a href="./le-delice-des-sens.html"></a><img src="public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                    <div class="resto-subtitle">
+                      <h3>Le délice des sens</h3>
+                      <p>Folie-Méricourt</p>
+                    </div>
+                    <div>
+                      <!--<i class="far fa-heart fa-2x"></i>-->
+                      <i class="fas fa-heart fa-2x resto-icone"></i></a>
+                    </div>
+                  </div>
+
             </section>
+
           </main>
         
           <footer>
             <div>
-              <span>ohmyfood</span>
-              <ul>
+              <p>ohmyfood</p>
+              <ul class="footer-liste">
                 <li>
-                  <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+                  <a href="#"><i class="fas fa-utensils footer-icone-1"></i>Proposer un restaurant</a>
                 </li>
                 <li>
-                  <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+                  <a href="#"><i class="fas fa-hands-helping footer-icone-2"></i>Devenir partenaire</a>
                 </li>
                 <li>
                   <a href="#">Mentions légales</a>
