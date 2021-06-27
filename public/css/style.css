@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
+/*$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    font-family: 'Shrikhand', sans-serif;
+    text-align: center;
+    margin: auto;
+    height: 3rem;
+    padding-bottom: 1rem;
+    box-shadow: 0px 2px 2px rgb(168, 168, 168);
+    background-color: white;
+    position: relative;
+}
+main{
+    margin: auto;
+}
+.location{
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    white-space: nowrap;
+}
+.icone-location{
+    padding-right: 1rem;
+}
+.reserve{
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+    height: 300px;
+    padding-top: 30px;
+}
+.reserve-subtitle{
+    font-weight: 300;
+    margin: 1.5rem;
+}
+.reserve-btn{
+    background-color: #FF79DA;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    position: relative;
+    top: 2rem;
+    color: white;
+    cursor: pointer;
+}
+.operation{
+    margin: 2rem;
+}
+ol{
+    padding-inline-start: 0px;
+}
+.operation-liste{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.operation-title{
+    width: 100%;
+}
+.operation-btn{
+    background-color: rgb(250, 250, 250);
+    padding: 1.5rem 1.5rem;
+    border-radius: 1.5rem;
+    width: 25%;
+    min-width: 16rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 2px 2px rgb(168, 168, 168);
+    list-style: none;
+    counter-increment: repas;
+    cursor: pointer;
+}
+.operation-icone{
+    margin-right: 1rem;
+    color: #7e7e7e;
+}
+.operation-btn:before {
+	content: counter(repas);
+	padding: 5px 10px;
+	background: #9356DC;
+    vertical-align: middle;
+	border-radius: 3.75rem;
+	font-weight: bold;
+	color: white;
+    position: relative;	
+    right: 2rem;
+}
+.operation-title-btn{
+    font-weight: bold;
+}
+.operation-btn:hover{ 
+    background-color: rgb(246, 235, 255);
+}
+.operation-icone:hover{
+    color: #9356DC;
+}
+.resto{
+    padding: 2rem;
+    background-color: rgb(250, 250, 250); 
+}
+.resto-title{
+    width: 100%;
+}
+.resto-card{
+    background-color: white;
+    border-radius: 1rem;
+    height: 270px;
+    position: relative;
+    box-shadow: 0px 2px 2px rgb(168, 168, 168);
+    margin-bottom: 2rem;
+}
+.resto-card img{
+    width: 100%;
+    height: 12rem;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+}
+.new{
+    background-color: #99E2D0;
+    color: #46a18a;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+}
+.resto-subtitle{
+    line-height: 0.5rem;
+    padding-left: 1rem;
+}
+.resto-icone{
+    position: absolute;
+    right: 1rem;
+    bottom: 2rem;
+    color: #9356DC;
+}
+footer{
+    background-color: rgb(49, 49, 49);
+    padding: 2rem;
+    color: white;
+    margin: auto;
+}
+footer li{
+    list-style-type: none;
+}
+ul{
+    padding: 0;
+}
+footer p{
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 20px;
+}
+.footer-icone-1{
+    margin-right: 0.5rem;
+}
+.footer-icone-2{
+    margin-right: 0.5rem;
+    font-size: 10px;
+}
+.footer-liste{
+    line-height: 1.5rem;
+}
