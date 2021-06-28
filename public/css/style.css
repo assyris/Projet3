@@ -100,10 +100,10 @@ ol{
 .operation-title-btn{
     font-weight: bold;
 }
-.operation-btn:hover{ 
+.operation-btn:focus{ 
     background-color: rgb(246, 235, 255);
 }
-.operation-icone:hover{
+.operation-icone:focus{
     color: #9356DC;
 }
 .resto{
@@ -141,11 +141,21 @@ ol{
     line-height: 0.5rem;
     padding-left: 1rem;
 }
-.resto-icone{
+.resto-icone-1{
     position: absolute;
     right: 1rem;
-    bottom: 2rem;
+    bottom: 2rem;  
+    color: grey;
+    background-color: white;
+}
+.resto-icone-2{
+    position: absolute;
+    right: 1rem;
+    bottom: 2rem;  
     color: #9356DC;
+}
+.resto-icone-1:hover{
+    visibility: hidden;
 }
 footer{
     background-color: rgb(49, 49, 49);
