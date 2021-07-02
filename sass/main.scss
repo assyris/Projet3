@@ -1,0 +1,136 @@
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/button";
+
+@import "./layout/header";
+
+@import "./utils/mixins";
+@import "./utils/variables";
+
+
+.reserve__btn{
+    @include btn;
+    background: linear-gradient(to bottom right,$color-secondary, $color-primary );  
+    color: white; 
+    position: relative;
+    top: 2rem;
+}
+.operation__btn{
+    @include btn;
+    background-color: rgb(250, 250, 250);
+    width: 25%;
+    min-width: 16rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    counter-increment: repas;
+    &:before {
+        content: counter(repas);
+        padding: 5px 10px;
+        background: #9356DC;
+        vertical-align: middle;
+        border-radius: 3.75rem;
+        font-weight: bold;
+        color: white;
+        position: relative;	
+        right: 2rem;
+    }
+    &:hover{ 
+        background-color: rgb(246, 235, 255);
+    }
+}
+.operation__icone:hover{
+    color: #9356DC;
+}
+.location{
+    background-color: $color-grey;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    white-space: nowrap;
+    &__icone{
+    padding-right: 1rem;
+    }
+}
+.reserve{
+    background-color: $color-grey-light;
+    text-align: center;
+    height: 300px;
+    padding-top: 30px;
+    &__subtitle{
+        margin: 1.5rem;
+    }
+}
+.operation{
+    margin: 2rem;
+}
+.resto{
+    @include card;
+    & img{
+        width: 100%;
+        height: 12rem;
+        border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+    &__icone__1{
+        @include heart;
+        color: grey;
+        background-color: white;
+        &:hover{
+            visibility: hidden;
+        }
+    }
+    &__icone__2{
+        @include heart;
+        background: -webkit-linear-gradient(left, $color-secondary, $color-primary );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &:hover{
+            display: none;
+        }
+    }
+    &__subtitle{
+        line-height: 0.5rem;
+        padding-left: 1rem;
+    }
+}
+ol{
+    padding-inline-start: 0px;
+}
+.operation__liste{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.operation__title{
+    width: 100%;
+}
+.operation__icone{
+    margin-right: 1rem;
+    color: $color-grey-dark;
+}
+.resto__title{
+    width: 100%;
+}
+.new{
+    background-color: $color-tertiary;
+    color: #46a18a;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+}
+.footer{
+    background-color: rgb(49, 49, 49);
+    padding: 2rem;
+    margin: auto;
+    ul{
+        padding: 0;
+    }
+    &__icone__1, &__icone-2{
+        margin-right: 0.5rem;
+    }
+}
+

@@ -1,0 +1,19 @@
+@mixin btn {
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgb(168, 168, 168);
+}
+@mixin card {
+    background-color: white;
+    border-radius: 1rem;
+    height: 270px;
+    position: relative;
+    box-shadow: 0px 2px 2px rgb(168, 168, 168);
+    margin-bottom: 2rem;
+}
+@mixin heart {
+    position: absolute;
+    right: 1rem;
+    bottom: 2rem;  
+}
