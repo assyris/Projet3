@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
 
-/*$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-*/
-
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -27,7 +22,7 @@ header{
 .icone-arrow{
     position: absolute;
     left: 1rem;
-    top: 1.5rem;
+    top: 0.2rem;
     font-size: 2rem;
     color: rgb(102, 102, 102);
 }
@@ -82,11 +77,32 @@ main{
     text-overflow: ellipsis;
     overflow: hidden;
     transition: padding-right 450ms ease-in-out;
+    box-sizing: border-box;
+    position: relative;
+    z-index: ;
 }
-/*.btn-entrées:hover, .btn-plats:hover,
+.btn-title{
+    width: 80%;
+    height: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    align-items: center;
+    margin: 0 0 1rem 1rem;
+}
+h4{
+    width: 100%;
+    margin: 0;
+    line-height: 0.5rem;
+    margin: 1rem 0 0 1rem;
+}
+.btn-entrées:hover, .btn-plats:hover,
  .btn-desserts:hover {
     padding-right: 75px;
 }
+
+/*
 .btn-entrées:hover .block-icone,
  .btn-plats:hover .block-icone,
  .btn-desserts:hover .block-icone {
@@ -116,7 +132,7 @@ main{
 .block-icone {
     background-color: #99E2D0;
     width: 40px;
-    height: 80px;
+    height: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     position: relative;
@@ -124,23 +140,11 @@ main{
     left: 350px;
     opacity: 1;
     transition: transform 330ms ease-in-out;
+    box-sizing: border-box;
   }
 .block-icone .anime-icone {
     color: #fff;
     transition: transform 500ms ease-in-out;
-}
-.btn-title{
-    display: flex;
-    justify-content: space-between;
-    line-height: 0.5rem;
-    align-items: center;
-    margin: 0 0 1rem 1rem;
-}
-h4{
-    width: 100%;
-    margin: 0;
-    line-height: 0.5rem;
-    margin: 1rem 0 0 1rem;
 }
 .commande{
     text-align: center;
@@ -153,6 +157,14 @@ h4{
     color: white;
     cursor: pointer;    
 }
+@keyframes appearance{
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+} */
 footer{
     background-color: rgb(49, 49, 49);
     padding: 2rem;
@@ -180,11 +192,3 @@ footer p{
     line-height: 1.5rem;
 }
 
-@keyframes appearance{
-    from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-} */

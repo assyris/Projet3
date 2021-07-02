@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  margin: auto;
+}
+
+.restaurants {
+  margin: auto 2rem;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.reserve-subtitle {
+  font-weight: 300;
+}
+
+.location {
+  line-height: 3rem;
+}
+
+.operation__btn__title {
+  font-weight: bold;
+}
+
+.footer {
+  color: white;
+}
+
+footer p {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 20px;
+}
+
+.footer-liste {
+  line-height: 1.5rem;
+}
+
+.footer-icone-2 {
+  font-size: 10px;
+}
+
+header {
+  text-align: center;
+  margin: auto;
+  height: 3rem;
+  padding-bottom: 1rem;
+  box-shadow: 0px 2px 2px #a8a8a8;
+  background-color: white;
+  position: relative;
+}
+
+.reserve__btn {
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px #a8a8a8;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  position: relative;
+  top: 2rem;
+}
+
+.operation__btn {
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px #a8a8a8;
+  background-color: #fafafa;
+  width: 25%;
+  min-width: 16rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  counter-increment: repas;
+}
+.operation__btn:before {
+  content: counter(repas);
+  padding: 5px 10px;
+  background: #9356DC;
+  vertical-align: middle;
+  border-radius: 3.75rem;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  right: 2rem;
+}
+.operation__btn:hover {
+  background-color: #f6ebff;
+}
+
+.operation__icone:hover {
+  color: #9356DC;
+}
+
+.location {
+  background-color: #ebebeb;
+  text-align: center;
+  height: 3rem;
+  line-height: 3rem;
+  white-space: nowrap;
+}
+.location__icone {
+  padding-right: 1rem;
+}
+
+.reserve {
+  background-color: #f3f3f3;
+  text-align: center;
+  height: 300px;
+  padding-top: 30px;
+}
+.reserve__subtitle {
+  margin: 1.5rem;
+}
+
+.operation {
+  margin: 2rem;
+}
+
+.resto {
+  background-color: white;
+  border-radius: 1rem;
+  height: 270px;
+  position: relative;
+  box-shadow: 0px 2px 2px #a8a8a8;
+  margin-bottom: 2rem;
+}
+.resto img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+}
+.resto__icone__1 {
+  position: absolute;
+  right: 1rem;
+  bottom: 2rem;
+  color: grey;
+  background-color: white;
+}
+.resto__icone__1:hover {
+  visibility: hidden;
+}
+.resto__icone__2 {
+  position: absolute;
+  right: 1rem;
+  bottom: 2rem;
+  background: -webkit-linear-gradient(left, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.resto__icone__2:hover {
+  display: none;
+}
+.resto__subtitle {
+  line-height: 0.5rem;
+  padding-left: 1rem;
+}
+
+ol {
+  padding-inline-start: 0px;
+}
+
+.operation__liste {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.operation__title {
+  width: 100%;
+}
+
+.operation__icone {
+  margin-right: 1rem;
+  color: #7e7e7e;
+}
+
+.resto__title {
+  width: 100%;
+}
+
+.new {
+  background-color: #99e2d0;
+  color: #46a18a;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 0rem;
+  right: 1rem;
+}
+
+.footer {
+  background-color: #313131;
+  padding: 2rem;
+  margin: auto;
+}
+.footer ul {
+  padding: 0;
+}
+.footer__icone__1, .footer__icone-2 {
+  margin-right: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
