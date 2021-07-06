@@ -9,6 +9,15 @@ a{
 main{
     margin: auto;
 }
+.main__menu{
+    margin: auto;
+    width: 80%;   
+}
+@media screen and (max-width: 600px) { 
+    .main__menu{
+        width: 100%;
+    } 
+}
 .restaurants{
     margin: auto 2rem;
 }

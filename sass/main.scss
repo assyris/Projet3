@@ -1,47 +1,15 @@
-@import "./base/base";
-@import "./base/typography";
-
-@import "./components/button";
-
-@import "./layout/header";
-
 @import "./utils/mixins";
 @import "./utils/variables";
 
+@import "./components/button";
 
-.reserve__btn{
-    @include btn;
-    background: linear-gradient(to bottom right,$color-secondary, $color-primary );  
-    color: white; 
-    position: relative;
-    top: 2rem;
-}
-.operation__btn{
-    @include btn;
-    background-color: rgb(250, 250, 250);
-    width: 25%;
-    min-width: 16rem;
-    margin-bottom: 1rem;
-    list-style: none;
-    counter-increment: repas;
-    &:before {
-        content: counter(repas);
-        padding: 5px 10px;
-        background: #9356DC;
-        vertical-align: middle;
-        border-radius: 3.75rem;
-        font-weight: bold;
-        color: white;
-        position: relative;	
-        right: 2rem;
-    }
-    &:hover{ 
-        background-color: rgb(246, 235, 255);
-    }
-}
-.operation__icone:hover{
-    color: #9356DC;
-}
+@import "./base/base";
+@import "./base/typography";
+
+@import "./layout/header";
+
+
+                            // accueil //
 .location{
     background-color: $color-grey;
     text-align: center;
@@ -72,26 +40,22 @@
         border-radius: 1rem 1rem 0 0;
         object-fit: cover;
     }
-    &__icone__1{
+    &__heart{
         @include heart;
-        color: grey;
-        background-color: white;
-        &:hover{
-            visibility: hidden;
-        }
+        position: absolute;
+        right: 1rem;
+        bottom: 2rem; 
+    }   
+}   
+@keyframes filling {
+    0% {
+      opacity: 0;
     }
-    &__icone__2{
-        @include heart;
-        background: -webkit-linear-gradient(left, $color-secondary, $color-primary );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        &:hover{
-            display: none;
-        }
+    50% {
+      opacity: 0.5;
     }
-    &__subtitle{
-        line-height: 0.5rem;
-        padding-left: 1rem;
+    100% {
+      opacity: 1;
     }
 }
 ol{
@@ -112,6 +76,9 @@ ol{
 .resto__title{
     width: 100%;
 }
+.resto__subtitle{
+    padding-left: 1rem;
+}
 .new{
     background-color: $color-tertiary;
     color: #46a18a;
@@ -122,6 +89,61 @@ ol{
     top: 0rem;
     right: 1rem;
 }
+                            // accueil //
+
+                            // menu //
+.img__fond{
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+}
+.title__page{
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: 'Shrikhand', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    background-color: rgb(243, 243, 243);
+    border-radius: 3rem 3rem 0 0;
+    position: relative;
+    padding: 1rem 2rem 8rem 2rem;
+    margin-top: -4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menu__heart{
+    @include heart;
+    position: relative;
+    top: 1rem;   
+}
+.entrées, .plats, .desserts{
+    width: 25rem;
+    min-width: 30%;
+    & h3, & h3, & h3{
+        border-bottom: 3px solid #99E2D0;
+        width: 30px;
+    }   
+}
+@keyframes appearance{
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+}
+
+@media screen and (max-width: 1600px){
+    .entrées, .plats, .desserts{
+        width: 100%;
+    }  
+}
+                            // menu //
+
+
 .footer{
     background-color: rgb(49, 49, 49);
     padding: 2rem;
