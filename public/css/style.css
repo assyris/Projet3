@@ -1,17 +1,28 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-.reserve__btn {
+.casse-couille {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.casse-couille .reserve__btn {
   background-color: #fafafa;
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   box-shadow: 0px 2px 2px #a8a8a8;
+  box-sizing: border-box;
   cursor: pointer;
   width: 15rem;
   border-radius: 2rem;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
-  position: relative;
-  top: 2rem;
+  transition-duration: 0.5s;
+}
+.casse-couille .reserve__btn:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
 .operation__btn {
@@ -19,6 +30,7 @@
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   box-shadow: 0px 2px 2px #a8a8a8;
+  box-sizing: border-box;
   cursor: pointer;
   width: 25%;
   min-width: 16rem;
@@ -54,7 +66,9 @@
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   box-shadow: 0px 2px 2px #a8a8a8;
+  box-sizing: border-box;
   cursor: pointer;
+  padding: 0rem 1rem;
   height: 4rem;
   margin-bottom: 1rem;
   animation: appearance 2s ease-in-out;
@@ -65,40 +79,21 @@
   position: relative;
 }
 .btn__entrées .btn__title, .btn__plats .btn__title, .btn__desserts .btn__title {
-  display: block;
-  align-items: center;
-  line-height: 0.3;
-  width: 50%;
-  position: relative;
-  bottom: 1rem;
+  line-height: 0;
+  width: 80%;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .btn__entrées .price, .btn__plats .price, .btn__desserts .price {
+  background-color: white;
   position: absolute;
   font-weight: bold;
-  right: 20px;
-  bottom: 5px;
+  right: 1rem;
+  bottom: 0.7rem;
   transition: transform 330ms ease-in-out;
 }
-.btn__entrées:hover .price, .btn__entrées:hover .price, .btn__entrées:hover .price, .btn__plats:hover .price, .btn__plats:hover .price, .btn__plats:hover .price, .btn__desserts:hover .price, .btn__desserts:hover .price, .btn__desserts:hover .price {
-  transform: translate(-4rem);
-}
-.btn__entrées:hover .btn__icone, .btn__entrées:hover .btn__icone, .btn__entrées:hover .btn__icone, .btn__plats:hover .btn__icone, .btn__plats:hover .btn__icone, .btn__plats:hover .btn__icone, .btn__desserts:hover .btn__icone, .btn__desserts:hover .btn__icone, .btn__desserts:hover .btn__icone {
-  opacity: 1;
-  transform: translate(-4rem);
-}
-.btn__entrées:hover .btn__icone__anime, .btn__entrées:hover .btn__icone__anime, .btn__entrées:hover .btn__icone__anime, .btn__plats:hover .btn__icone__anime, .btn__plats:hover .btn__icone__anime, .btn__plats:hover .btn__icone__anime, .btn__desserts:hover .btn__icone__anime, .btn__desserts:hover .btn__icone__anime, .btn__desserts:hover .btn__icone__anime {
-  transform: rotate(360deg);
-}
-.btn__entrées:nth-child(2), .btn__entrées:nth-child(2), .btn__entrées:nth-child(2), .btn__plats:nth-child(2), .btn__plats:nth-child(2), .btn__plats:nth-child(2), .btn__desserts:nth-child(2), .btn__desserts:nth-child(2), .btn__desserts:nth-child(2) {
-  animation: appearance 1s ease-in-out;
-}
-.btn__entrées:nth-child(3), .btn__entrées:nth-child(3), .btn__entrées:nth-child(3), .btn__plats:nth-child(3), .btn__plats:nth-child(3), .btn__plats:nth-child(3), .btn__desserts:nth-child(3), .btn__desserts:nth-child(3), .btn__desserts:nth-child(3) {
-  animation: appearance 1.5s ease-in-out;
-}
-
-.btn__icone {
+.btn__entrées .btn__icone, .btn__plats .btn__icone, .btn__desserts .btn__icone {
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -116,9 +111,25 @@
   transition: transform 330ms ease-in-out;
   box-sizing: border-box;
 }
-.btn__icone__anime {
+.btn__entrées .btn__icone__anime, .btn__plats .btn__icone__anime, .btn__desserts .btn__icone__anime {
   vertical-align: middle;
   transition: transform 500ms ease-in-out;
+}
+.btn__entrées:hover .price, .btn__plats:hover .price, .btn__desserts:hover .price {
+  transform: translate(-4rem);
+}
+.btn__entrées:hover .btn__icone, .btn__plats:hover .btn__icone, .btn__desserts:hover .btn__icone {
+  opacity: 1;
+  transform: translate(-4rem);
+}
+.btn__entrées:hover .btn__icone__anime, .btn__plats:hover .btn__icone__anime, .btn__desserts:hover .btn__icone__anime {
+  transform: rotate(360deg);
+}
+.btn__entrées:nth-child(2), .btn__plats:nth-child(2), .btn__desserts:nth-child(2) {
+  animation: appearance 1s ease-in-out;
+}
+.btn__entrées:nth-child(3), .btn__plats:nth-child(3), .btn__desserts:nth-child(3) {
+  animation: appearance 1.5s ease-in-out;
 }
 
 .commande {
@@ -131,14 +142,20 @@
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   box-shadow: 0px 2px 2px #a8a8a8;
+  box-sizing: border-box;
   cursor: pointer;
   width: 15rem;
   border-radius: 2rem;
   text-align: center;
   margin-top: 2rem;
-  box-sizing: border-box;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
+  transition-duration: 0.5s;
+}
+.commande__btn:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
 body {

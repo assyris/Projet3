@@ -1,12 +1,22 @@
-.reserve__btn{
-    @include btn;
-    width: 15rem;
-    border-radius: 2rem;
-    background: linear-gradient(to bottom right,$color-secondary, $color-primary );  
-    color: white; 
-    position: relative;
-    top: 2rem;
-}
+.casse-couille{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    .reserve__btn{
+        @include btn;
+        width: 15rem;
+        border-radius: 2rem;
+        background: linear-gradient(to bottom right,$color-secondary, $color-primary );  
+        color: white; 
+        transition-duration: 0.5s;
+        &:hover {
+            background-color: lighten($color-primary, 10%);
+            background-blend-mode: lighten;
+            box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);   
+        }
+    }
+}    
 .operation__btn{
     @include btn;
     width: 25%;
@@ -17,7 +27,7 @@
     &:before {
         content: counter(repas);
         padding: 5px 10px;
-        background: #9356DC;
+        background: $color-primary;
         vertical-align: middle;
         border-radius: 3.75rem;
         font-weight: bold;
@@ -25,7 +35,7 @@
         position: relative;	
         right: 2rem;
     }
-    &:hover { background-color:rgb(246, 235, 255) }  &:hover > i { color: #9356DC }
+    &:hover { background-color:rgb(246, 235, 255) }  &:hover > i { color: $color-primary }
 }
 @media screen and (max-width: 1024px) {
     .operation__btn{
@@ -35,6 +45,7 @@
 
 .btn__entrées, .btn__plats, .btn__desserts{
     @include btn;
+    padding: 0rem 1rem;
     height: 4rem;
     margin-bottom: 1rem;
     animation: appearance 2s ease-in-out;
@@ -44,61 +55,60 @@
     display: flex;  
     position: relative;
     .btn__title{
-        display: block; 
-        align-items: center;
-        line-height: 0.3;
-        width: 50%;
-        position: relative;
-        bottom: 1rem;
+        line-height: 0;
+        width: 80%;
         white-space: nowrap;
         text-overflow: ellipsis;
+        overflow: hidden;
     }
     .price{
+        background-color: white;
         position: absolute;
         font-weight: bold;
-        right: 20px;
-        bottom: 5px;
+        right: 1rem;
+        bottom: 0.7rem;
         transition: transform 330ms ease-in-out;
     }
-    &:hover .price, &:hover .price ,&:hover .price {
+    .btn__icone{
+        font-size: 2rem;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 4rem;
+        width: 4rem;
+        position: absolute;
+        right: -65px;
+        bottom: 0px;
+        background-color: #99E2D0;
+        color: #fff;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        opacity: 1;
+        transition: transform 330ms ease-in-out;
+        box-sizing: border-box;
+        &__anime{
+            vertical-align: middle;
+            transition: transform 500ms ease-in-out;
+        }  
+    }
+    &:hover .price{
         transform: translate(-4rem);   
     }
-    &:hover .btn__icone, &:hover .btn__icone, &:hover .btn__icone {
+    &:hover .btn__icone{
         opacity: 1;
         transform: translate(-4rem);    
     }
-    &:hover .btn__icone__anime, &:hover .btn__icone__anime, &:hover .btn__icone__anime {
+    &:hover .btn__icone__anime{
         transform: rotate(360deg);
     }
-    &:nth-child(2), &:nth-child(2), &:nth-child(2) {
+    &:nth-child(2){
         animation: appearance 1s ease-in-out;
     }
-    &:nth-child(3), &:nth-child(3), &:nth-child(3) {
+    &:nth-child(3){
         animation: appearance 1.5s ease-in-out;
     }
 }
-.btn__icone{
-    font-size: 2rem;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height: 4rem;
-    width: 4rem;
-    position: absolute;
-    right: -65px;
-    bottom: 0px;
-    background-color: #99E2D0;
-    color: #fff;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    opacity: 1;
-    transition: transform 330ms ease-in-out;
-    box-sizing: border-box;
-    &__anime{
-        vertical-align: middle;
-        transition: transform 500ms ease-in-out;
-    }  
-}
+
 .commande{
     width: 100%;
     display: flex;
@@ -109,8 +119,13 @@
         border-radius: 2rem;
         text-align: center;
         margin-top: 2rem;
-        box-sizing: border-box;
-        background: linear-gradient(to bottom right,#FF79DA, #9356DC );
-        color: white;    
+        background: linear-gradient(to bottom right,$color-secondary, $color-primary );
+        color: white;
+        transition-duration: 0.5s;
+        &:hover {
+            background-color: lighten($color-primary, 10%);
+            background-blend-mode: lighten;
+            box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+        }  
     }
 }
