@@ -1,0 +1,35 @@
+.img__fond{
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+}
+.title__page{
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: 'Shrikhand', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    background-color: rgb(243, 243, 243);
+    border-radius: 3rem 3rem 0 0;
+    position: relative;
+    padding: 1rem 2rem 8rem 2rem;
+    margin-top: -4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menu__heart{
+    @include heart;
+    position: relative;
+    top: 1rem;   
+}
+.entrées, .plats, .desserts{
+    width: 25rem;
+    min-width: 30%;
+    & h3, & h3, & h3{
+        border-bottom: 3px solid #99E2D0;
+        width: 30px;
+    }   
+}

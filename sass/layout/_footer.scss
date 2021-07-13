@@ -1,0 +1,15 @@
+.footer{
+    background-color: rgb(49, 49, 49);
+    padding: 2rem;
+    margin: auto;
+    ul{
+        padding: 0;
+    }
+    & i{
+        margin-right: 0.5rem;
+    }
+    &__menu{
+        width: 80%;
+        margin: auto;
+    }
+}

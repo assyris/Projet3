@@ -15,7 +15,7 @@
     margin-bottom: 2rem;
 }
 @mixin heart {
-    color: grey;
+    color: $color-grey-dark;
     cursor: pointer;
     &:hover {
         animation: filling 0.5s ease-out;
@@ -26,4 +26,12 @@
         -webkit-text-fill-color: transparent;
         font-weight: bold;
     }
+}
+@mixin ball{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    border-radius: 100%;
+    display: inline-block;
+    animation: spinner 1.4s infinite ease-in-out;
 }

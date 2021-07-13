@@ -1,0 +1,68 @@
+.location{
+    background-color: $color-grey;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    white-space: nowrap;
+    &__icone{
+    padding-right: 1rem;
+    }
+}
+.reserve{
+    background-color: $color-grey-light;
+    text-align: center;
+    height: 300px;
+    padding-top: 30px;
+    &__subtitle{
+        margin: 1.5rem;
+    }
+}
+.operation{
+    margin: 2rem;
+}
+.resto{
+    @include card;
+    & img{
+        width: 100%;
+        height: 12rem;
+        border-radius: 1rem 1rem 0 0;
+        object-fit: cover;
+    }
+    &__heart{
+        @include heart;
+        position: absolute;
+        right: 1rem;
+        bottom: 2rem; 
+    }   
+}
+ol{
+    padding-inline-start: 0px;
+}
+.operation__liste{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.operation__title{
+    width: 100%;
+}
+.operation__icone{
+    margin-right: 1rem;
+    color: $color-grey-dark;
+}
+.resto__title{
+    width: 100%;
+}
+.resto__subtitle{
+    padding-left: 1rem;
+}
+.new{
+    background-color: $color-tertiary;
+    color: #46a18a;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+}   

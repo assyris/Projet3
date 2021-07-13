@@ -1,158 +1,33 @@
 @import "./utils/mixins";
 @import "./utils/variables";
+@import "./utils/animation";
 
 @import "./components/button";
+@import "./components/spinner";
 
 @import "./base/base";
 @import "./base/typography";
 
+@import "./layout/media";
 @import "./layout/header";
+@import "./layout/footer";
+@import "./layout/accueil";
+@import "./layout/menu";
 
-
-                            // accueil //
-.location{
-    background-color: $color-grey;
-    text-align: center;
-    height: 3rem;
-    line-height: 3rem;
-    white-space: nowrap;
-    &__icone{
-    padding-right: 1rem;
-    }
-}
-.reserve{
-    background-color: $color-grey-light;
-    text-align: center;
-    height: 300px;
-    padding-top: 30px;
-    &__subtitle{
-        margin: 1.5rem;
-    }
-}
-.operation{
-    margin: 2rem;
-}
-.resto{
-    @include card;
-    & img{
-        width: 100%;
-        height: 12rem;
-        border-radius: 1rem 1rem 0 0;
-        object-fit: cover;
-    }
-    &__heart{
-        @include heart;
-        position: absolute;
-        right: 1rem;
-        bottom: 2rem; 
-    }   
-}   
-@keyframes filling {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
-}
-ol{
-    padding-inline-start: 0px;
-}
-.operation__liste{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.operation__title{
-    width: 100%;
-}
-.operation__icone{
-    margin-right: 1rem;
-    color: $color-grey-dark;
-}
-.resto__title{
-    width: 100%;
-}
-.resto__subtitle{
-    padding-left: 1rem;
-}
-.new{
-    background-color: $color-tertiary;
-    color: #46a18a;
-    font-weight: bold;
-    padding: 0.5rem;
-    border-radius: 0.125rem;
-    position: absolute;
-    top: 0rem;
-    right: 1rem;
-}
-                            // accueil //
-
-                            // menu //
-.img__fond{
-    max-height: 32rem;
-    width: 100%;
-    object-fit: cover;
-}
-.title__page{
-    width: 100%;
-    font-size: 1.3rem;
-    font-family: 'Shrikhand', sans-serif;
-    display: flex;
-    justify-content: space-between;
-}
-.menu{
-    background-color: rgb(243, 243, 243);
-    border-radius: 3rem 3rem 0 0;
-    position: relative;
-    padding: 1rem 2rem 8rem 2rem;
-    margin-top: -4rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.menu__heart{
-    @include heart;
-    position: relative;
-    top: 1rem;   
-}
-.entrées, .plats, .desserts{
-    width: 25rem;
-    min-width: 30%;
-    & h3, & h3, & h3{
-        border-bottom: 3px solid #99E2D0;
-        width: 30px;
-    }   
-}
-@keyframes appearance{
-    from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-}
 
 @media screen and (max-width: 1600px){
     .entrées, .plats, .desserts{
         width: 100%;
     }  
 }
-                            // menu //
-
-
-.footer{
-    background-color: rgb(49, 49, 49);
-    padding: 2rem;
-    margin: auto;
-    ul{
-        padding: 0;
-    }
-    &__icone__1, &__icone-2{
-        margin-right: 0.5rem;
+@media screen and (max-width: 600px) { 
+    .main__menu{
+        width: 100%;
+    } 
+}
+@media screen and (max-width: 1245px) {
+    .operation__btn{
+        width: 100%;
     }
 }
 
