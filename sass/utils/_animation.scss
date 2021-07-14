@@ -30,12 +30,14 @@
 }
 @keyframes load{
   0%{
-    opacity: 50%;
+    opacity: 1;
   }
-  75%{
-    opacity: 50%;
+  50%{
+    opacity: 1;
   }
   100%{
     opacity: 0%;
+    // transform: translateX(9999px);
+    z-index: -10;
   }
 }
