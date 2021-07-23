@@ -8,26 +8,7 @@
 @import "./base/base";
 @import "./base/typography";
 
-@import "./layout/media";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/accueil";
 @import "./layout/menu";
-
-
-@media screen and (max-width: 1600px){
-    .entrées, .plats, .desserts{
-        width: 100%;
-    }  
-}
-@media screen and (max-width: 600px) { 
-    .main__menu{
-        width: 100%;
-    } 
-}
-@media screen and (max-width: 1245px) {
-    .operation__btn{
-        width: 100%;
-    }
-}
-

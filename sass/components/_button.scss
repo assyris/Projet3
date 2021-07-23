@@ -55,7 +55,7 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
-        }
+        }   
     }
     .price{
         display: flex;
@@ -90,7 +90,7 @@
         height: 100%;  
     }
     &:hover .price{
-        transform: translate(-2rem);   
+        transform: translate(-0.5rem);   
     }
     &:hover .btn__icone{
         transform: translate(0); 
@@ -107,7 +107,6 @@
         animation: appearance 1.5s ease-in-out;
     }
 }
-
 .commande{
     width: 100%;
     display: flex;
@@ -126,5 +125,10 @@
             background-blend-mode: lighten;
             box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
         }  
+    }
+}
+@media screen and (max-width: 1245px) {
+    .operation__btn{
+        width: 100%;
     }
 }
